@@ -42,7 +42,7 @@ app.get("/health", (req, res) => {
   res.json({ ok: true, service: "vidgrab-backend" });
 });
 
-app.post("/api/detect", (req, res) => {
+app.post("/api/dawnload", (req, res) => {
   const schema = z.object({
     url: z.string().url().max(2048)
   });
